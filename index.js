@@ -20,3 +20,8 @@ const deleteFromEmployeeByKey = (employee, key) => {
   delete newEmployee[key];
   return newEmployee;
 }
+
+const destructivelyDeleteFromEmployeeByKey = (employee, key) => {
+  delete employee[key];
+  return employee;
+}
